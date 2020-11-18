@@ -12,8 +12,8 @@ namespace ls
 		std::map<char, int> indexMapper;
 		public:
 			Base64();
-			int Encode(const std::string &raw, std::string &base64);
-			int Decode(const std::string &base64, std::string &raw);
+			int encode(const std::string &raw, std::string &base64);
+			int decode(const std::string &base64, std::string &raw);
 	};
 }
 

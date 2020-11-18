@@ -28,7 +28,7 @@ namespace ls
 		characters[63] = '/';
 		characters[64] = '=';
 	}
-	int Base64::Encode(const string &raw, string &base64)
+	int Base64::encode(const string &raw, string &base64)
 	{
 		int len = 4 * (raw.size() / 3 + 
 				(raw.size() % 3 ? 1 : 0));
@@ -68,7 +68,7 @@ namespace ls
 		base64[i+3] = characters[base64[i+3]];
 		return 0;
 	}
-	int Base64::Decode(const string &base64, string &raw)
+	int Base64::decode(const string &base64, string &raw)
 	{
 		string index(base64.size(), '\0');
 		int len = base64.size() / 4 * 3;
