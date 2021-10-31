@@ -14,5 +14,5 @@ add_executable(testcase ${SRC_SAMPLE} ${SRC})
 
 install(TARGETS lsbase64 DESTINATION lib)
 
-install(DIRECTORY include/ls DESTINATION include/ls)
+install(DIRECTORY include/ls DESTINATION include)
 
